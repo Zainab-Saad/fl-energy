@@ -1,0 +1,2 @@
+round,train_loss,avg_train_acc,test_acc,test_loss
+150,-0.8736456959247588,0.9500000000000017,0.9207,-71.89194339513779

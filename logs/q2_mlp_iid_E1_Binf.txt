@@ -1,0 +1,2352 @@
+
+Experimental details:
+    Model     : mlp
+    Optimizer : sgd
+    Learning  : 0.01
+    Global Rounds   : 150
+
+    Federated parameters:
+    IID
+    Fraction of users  : 0.1
+    Local Batch size   : 10000
+    Local Epochs       : 1
+
+============device: cuda:0
+MLP(
+  (layer_input): Linear(in_features=784, out_features=64, bias=True)
+  (relu): ReLU()
+  (dropout): Dropout(p=0.5, inplace=False)
+  (layer_hidden): Linear(in_features=64, out_features=10, bias=True)
+  (softmax): Softmax(dim=1)
+)
+
+ | Global Training Round : 1 |
+
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098917
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098264
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.095926
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099552
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.096306
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098807
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098033
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.096702
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098141
+| Global Round : 0 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099992
+
+ | Global Training Round : 2 |
+
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099545
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098366
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097003
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098756
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.095010
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098648
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097183
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097427
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099566
+| Global Round : 1 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097960
+ 
+Avg Training Stats after 2 global rounds:
+Training Loss : -0.09800509065389634
+Train Accuracy: 10.00% 
+
+
+ | Global Training Round : 3 |
+
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100524
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099134
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098163
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097540
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098537
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098568
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100578
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100368
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100764
+| Global Round : 2 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097978
+
+ | Global Training Round : 4 |
+
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098843
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100091
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099122
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099095
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098280
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099508
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099357
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100683
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097610
+| Global Round : 3 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100395
+ 
+Avg Training Stats after 4 global rounds:
+Training Loss : -0.09863108042627573
+Train Accuracy: 6.67% 
+
+
+ | Global Training Round : 5 |
+
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100072
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098164
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101962
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099108
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099248
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099933
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098013
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097996
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100049
+| Global Round : 4 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101116
+
+ | Global Training Round : 6 |
+
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099458
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098410
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100452
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099383
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098637
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097965
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098569
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099615
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099170
+| Global Round : 5 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099827
+ 
+Avg Training Stats after 6 global rounds:
+Training Loss : -0.09887322249511878
+Train Accuracy: 8.33% 
+
+
+ | Global Training Round : 7 |
+
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101596
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099028
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100254
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099909
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098492
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098848
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101707
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099808
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099096
+| Global Round : 6 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099492
+
+ | Global Training Round : 8 |
+
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100008
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099642
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099359
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097979
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100141
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101012
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097358
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098108
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098288
+| Global Round : 7 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099728
+ 
+Avg Training Stats after 8 global rounds:
+Training Loss : -0.09902808461338282
+Train Accuracy: 8.33% 
+
+
+ | Global Training Round : 9 |
+
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097468
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100104
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100672
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098876
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101014
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099024
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101428
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099563
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100477
+| Global Round : 8 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099251
+
+ | Global Training Round : 10 |
+
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101284
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099108
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.097937
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100130
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098137
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102719
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100982
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100485
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098231
+| Global Round : 9 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098811
+ 
+Avg Training Stats after 10 global rounds:
+Training Loss : -0.09917949728667737
+Train Accuracy: 8.33% 
+
+
+ | Global Training Round : 11 |
+
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100668
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100084
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100642
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101385
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099634
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100940
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098054
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099675
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102354
+| Global Round : 10 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101424
+
+ | Global Training Round : 12 |
+
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100756
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100210
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102632
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100485
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100892
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098044
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100322
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102711
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100783
+| Global Round : 11 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100535
+ 
+Avg Training Stats after 12 global rounds:
+Training Loss : -0.09941816907376051
+Train Accuracy: 5.00% 
+
+
+ | Global Training Round : 13 |
+
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098363
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101742
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099247
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100631
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100132
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102220
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102911
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099372
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100588
+| Global Round : 12 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100296
+
+ | Global Training Round : 14 |
+
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100615
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098845
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100283
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101248
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100185
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099766
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.096649
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100042
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099810
+| Global Round : 13 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099772
+ 
+Avg Training Stats after 14 global rounds:
+Training Loss : -0.09952068813145161
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 15 |
+
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101884
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102816
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101329
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099565
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101897
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100825
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100055
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099586
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099585
+| Global Round : 14 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098992
+
+ | Global Training Round : 16 |
+
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101268
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100943
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099803
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100196
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098760
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101413
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101232
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099192
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100862
+| Global Round : 15 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100088
+ 
+Avg Training Stats after 16 global rounds:
+Training Loss : -0.09964491594582797
+Train Accuracy: 8.33% 
+
+
+ | Global Training Round : 17 |
+
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100949
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099702
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101894
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101280
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100483
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102743
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100465
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100428
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100738
+| Global Round : 16 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102036
+
+ | Global Training Round : 18 |
+
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101109
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101362
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103575
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100430
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103954
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100457
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099620
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101532
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104098
+| Global Round : 17 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101543
+ 
+Avg Training Stats after 18 global rounds:
+Training Loss : -0.09984214554230372
+Train Accuracy: 11.67% 
+
+
+ | Global Training Round : 19 |
+
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098229
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102275
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101576
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104071
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099524
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101176
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100629
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101013
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101716
+| Global Round : 18 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101552
+
+ | Global Training Round : 20 |
+
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100759
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102328
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100436
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102503
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102282
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100086
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100870
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099501
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099886
+| Global Round : 19 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101442
+ 
+Avg Training Stats after 20 global rounds:
+Training Loss : -0.09996720083057882
+Train Accuracy: 10.00% 
+
+
+ | Global Training Round : 21 |
+
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099633
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100385
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102443
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099677
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100560
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098733
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101790
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099981
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103023
+| Global Round : 20 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101232
+
+ | Global Training Round : 22 |
+
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100484
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100677
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100835
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100623
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103504
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100922
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100263
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099107
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103228
+| Global Round : 21 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103157
+ 
+Avg Training Stats after 22 global rounds:
+Training Loss : -0.1000622683628039
+Train Accuracy: 6.67% 
+
+
+ | Global Training Round : 23 |
+
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102293
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101645
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099288
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101028
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101950
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102239
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.099689
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102189
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102066
+| Global Round : 22 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101960
+
+ | Global Training Round : 24 |
+
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100258
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103061
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101986
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105082
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102643
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104405
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103549
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104558
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100728
+| Global Round : 23 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102756
+ 
+Avg Training Stats after 24 global rounds:
+Training Loss : -0.10023780353367329
+Train Accuracy: 16.67% 
+
+
+ | Global Training Round : 25 |
+
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100761
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102394
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103441
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102826
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101457
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100067
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102216
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102413
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102083
+| Global Round : 24 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101748
+
+ | Global Training Round : 26 |
+
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102180
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102647
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102111
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102382
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101112
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100836
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101486
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100026
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103530
+| Global Round : 25 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101335
+ 
+Avg Training Stats after 26 global rounds:
+Training Loss : -0.10036202293749039
+Train Accuracy: 20.00% 
+
+
+ | Global Training Round : 27 |
+
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101982
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101520
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100656
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101236
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102948
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101798
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104655
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.098640
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103046
+| Global Round : 26 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101520
+
+ | Global Training Round : 28 |
+
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101698
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102560
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105611
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103341
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100644
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101911
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102415
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102877
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102080
+| Global Round : 27 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101685
+ 
+Avg Training Stats after 28 global rounds:
+Training Loss : -0.10048910539065088
+Train Accuracy: 10.00% 
+
+
+ | Global Training Round : 29 |
+
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103993
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101497
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100741
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102531
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103844
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103123
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103534
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103472
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103929
+| Global Round : 28 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103225
+
+ | Global Training Round : 30 |
+
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103494
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100139
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102378
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104545
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101449
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104374
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104415
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103191
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103091
+| Global Round : 29 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101200
+ 
+Avg Training Stats after 30 global rounds:
+Training Loss : -0.1006503772487243
+Train Accuracy: 10.00% 
+
+
+ | Global Training Round : 31 |
+
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102079
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102369
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103815
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103593
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104565
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102116
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102635
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101048
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104180
+| Global Round : 30 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104338
+
+ | Global Training Round : 32 |
+
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103480
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101840
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102164
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104166
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103249
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102792
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104467
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101743
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102074
+| Global Round : 31 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104361
+ 
+Avg Training Stats after 32 global rounds:
+Training Loss : -0.10080058288294821
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 33 |
+
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103673
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103540
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103050
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101358
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103844
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104361
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106139
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101805
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102095
+| Global Round : 32 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100872
+
+ | Global Training Round : 34 |
+
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102294
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104339
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103209
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105535
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105904
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105113
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103881
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103391
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103340
+| Global Round : 33 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103328
+ 
+Avg Training Stats after 34 global rounds:
+Training Loss : -0.10096252551850149
+Train Accuracy: 11.67% 
+
+
+ | Global Training Round : 35 |
+
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102009
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104274
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103300
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106269
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102589
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104799
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104009
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103696
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104407
+| Global Round : 34 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103385
+
+ | Global Training Round : 36 |
+
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102426
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102585
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104488
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104654
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105094
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102973
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101287
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104195
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103220
+| Global Round : 35 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104146
+ 
+Avg Training Stats after 36 global rounds:
+Training Loss : -0.10111406729039217
+Train Accuracy: 16.67% 
+
+
+ | Global Training Round : 37 |
+
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105794
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103765
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103943
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104572
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103009
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102320
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104309
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103358
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103177
+| Global Round : 36 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104868
+
+ | Global Training Round : 38 |
+
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105097
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102849
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104997
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104181
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102814
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103552
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104028
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104989
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103037
+| Global Round : 37 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105357
+ 
+Avg Training Stats after 38 global rounds:
+Training Loss : -0.10126600549801398
+Train Accuracy: 5.00% 
+
+
+ | Global Training Round : 39 |
+
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103859
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104023
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101758
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103408
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104494
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102301
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103684
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103255
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106062
+| Global Round : 38 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104222
+
+ | Global Training Round : 40 |
+
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104233
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105537
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102895
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103073
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105732
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103962
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105440
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104418
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104768
+| Global Round : 39 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103123
+ 
+Avg Training Stats after 40 global rounds:
+Training Loss : -0.10140332587063314
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 41 |
+
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105877
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105553
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104161
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103566
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105489
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103610
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103446
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107251
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107935
+| Global Round : 40 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103046
+
+ | Global Training Round : 42 |
+
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105403
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102079
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105856
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105721
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102261
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105251
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105174
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104736
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105736
+| Global Round : 41 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101707
+ 
+Avg Training Stats after 42 global rounds:
+Training Loss : -0.10155997671896505
+Train Accuracy: 15.00% 
+
+
+ | Global Training Round : 43 |
+
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102777
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106052
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102828
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104550
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105270
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.100486
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108222
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104135
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105739
+| Global Round : 42 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104465
+
+ | Global Training Round : 44 |
+
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104810
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102802
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104263
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103053
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104373
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106101
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104803
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104334
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102712
+| Global Round : 43 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104623
+ 
+Avg Training Stats after 44 global rounds:
+Training Loss : -0.10168542985550383
+Train Accuracy: 10.00% 
+
+
+ | Global Training Round : 45 |
+
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105305
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103968
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103649
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104278
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103739
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105200
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106666
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107134
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103659
+| Global Round : 44 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105538
+
+ | Global Training Round : 46 |
+
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106492
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103484
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104632
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106398
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105416
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103206
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105243
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102218
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102704
+| Global Round : 45 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104521
+ 
+Avg Training Stats after 46 global rounds:
+Training Loss : -0.10181530038623707
+Train Accuracy: 16.67% 
+
+
+ | Global Training Round : 47 |
+
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106436
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103455
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104794
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102832
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104758
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105689
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104804
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105270
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106882
+| Global Round : 46 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108138
+
+ | Global Training Round : 48 |
+
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104510
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104842
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.101532
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104124
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106334
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105156
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104789
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104709
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104998
+| Global Round : 47 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102347
+ 
+Avg Training Stats after 48 global rounds:
+Training Loss : -0.10194049570709467
+Train Accuracy: 15.00% 
+
+
+ | Global Training Round : 49 |
+
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105436
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103684
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105976
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106626
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105071
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107801
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103829
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103955
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104893
+| Global Round : 48 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106043
+
+ | Global Training Round : 50 |
+
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106671
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104990
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106484
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104030
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103076
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103216
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104357
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106958
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106513
+| Global Round : 49 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105434
+ 
+Avg Training Stats after 50 global rounds:
+Training Loss : -0.10207296726107597
+Train Accuracy: 15.00% 
+
+
+ | Global Training Round : 51 |
+
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107405
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105256
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106179
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104382
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105143
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104646
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102368
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106820
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105064
+| Global Round : 50 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107187
+
+ | Global Training Round : 52 |
+
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106929
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104762
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104510
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105388
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104241
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104787
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108618
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106328
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105557
+| Global Round : 51 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103487
+ 
+Avg Training Stats after 52 global rounds:
+Training Loss : -0.10220296275443755
+Train Accuracy: 5.00% 
+
+
+ | Global Training Round : 53 |
+
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104384
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106887
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103149
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107799
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108915
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104637
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103005
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105903
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106723
+| Global Round : 52 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106975
+
+ | Global Training Round : 54 |
+
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106697
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107795
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105438
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105928
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106262
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105894
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106457
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105291
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104368
+| Global Round : 53 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106602
+ 
+Avg Training Stats after 54 global rounds:
+Training Loss : -0.10234194265471563
+Train Accuracy: 20.00% 
+
+
+ | Global Training Round : 55 |
+
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108950
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107965
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103735
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108107
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106630
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106956
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105949
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105111
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107817
+| Global Round : 54 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106432
+
+ | Global Training Round : 56 |
+
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104575
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104805
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104019
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106517
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106399
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104353
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108538
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106779
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106030
+| Global Round : 55 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108111
+ 
+Avg Training Stats after 56 global rounds:
+Training Loss : -0.1024864754905658
+Train Accuracy: 23.33% 
+
+
+ | Global Training Round : 57 |
+
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108369
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107209
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107461
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106284
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106414
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106594
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105821
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104948
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106817
+| Global Round : 56 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105327
+
+ | Global Training Round : 58 |
+
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106127
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107712
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104374
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107338
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107236
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105872
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.102625
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105683
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107860
+| Global Round : 57 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105541
+ 
+Avg Training Stats after 58 global rounds:
+Training Loss : -0.10261730550435083
+Train Accuracy: 10.00% 
+
+
+ | Global Training Round : 59 |
+
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105539
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104971
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109562
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106856
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106012
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106293
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106364
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108613
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108135
+| Global Round : 58 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107271
+
+ | Global Training Round : 60 |
+
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107956
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106092
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106960
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109050
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105909
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105639
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105255
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107485
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106726
+| Global Round : 59 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108048
+ 
+Avg Training Stats after 60 global rounds:
+Training Loss : -0.10276128571480513
+Train Accuracy: 6.67% 
+
+
+ | Global Training Round : 61 |
+
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105071
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107726
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106826
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109375
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108598
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110380
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109400
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108373
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107079
+| Global Round : 60 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107357
+
+ | Global Training Round : 62 |
+
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107181
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105660
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109417
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107911
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109352
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107185
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108842
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106857
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106184
+| Global Round : 61 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106694
+ 
+Avg Training Stats after 62 global rounds:
+Training Loss : -0.10292296872263954
+Train Accuracy: 18.33% 
+
+
+ | Global Training Round : 63 |
+
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.103469
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109090
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108173
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108732
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107926
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109045
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109238
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108161
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107612
+| Global Round : 62 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109173
+
+ | Global Training Round : 64 |
+
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108557
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108909
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106084
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108874
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107719
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106513
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106460
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107159
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108998
+| Global Round : 63 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107213
+ 
+Avg Training Stats after 64 global rounds:
+Training Loss : -0.1030771009856835
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 65 |
+
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107111
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106541
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108202
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110544
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107365
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108476
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108391
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108226
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106917
+| Global Round : 64 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108050
+
+ | Global Training Round : 66 |
+
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107457
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108067
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109459
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105897
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108380
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.104767
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106300
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108630
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108803
+| Global Round : 65 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105249
+ 
+Avg Training Stats after 66 global rounds:
+Training Loss : -0.10321541853023297
+Train Accuracy: 18.33% 
+
+
+ | Global Training Round : 67 |
+
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107402
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107164
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110263
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110858
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108949
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109494
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108555
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107039
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108646
+| Global Round : 66 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107108
+
+ | Global Training Round : 68 |
+
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107749
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107262
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109061
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109764
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107859
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109938
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108148
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107283
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108010
+| Global Round : 67 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109226
+ 
+Avg Training Stats after 68 global rounds:
+Training Loss : -0.10337052229134476
+Train Accuracy: 18.33% 
+
+
+ | Global Training Round : 69 |
+
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108599
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107924
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105947
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110455
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109583
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109728
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105338
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108237
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108524
+| Global Round : 68 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107609
+
+ | Global Training Round : 70 |
+
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107742
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112024
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108158
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110950
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108187
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111672
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111542
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106751
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108547
+| Global Round : 69 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108035
+ 
+Avg Training Stats after 70 global rounds:
+Training Loss : -0.10352501129465444
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 71 |
+
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107924
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109020
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109640
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108358
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109012
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109133
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108535
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108789
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108116
+| Global Round : 70 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107099
+
+ | Global Training Round : 72 |
+
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108815
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106667
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112231
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109463
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106587
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109771
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109989
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107841
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107548
+| Global Round : 71 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110395
+ 
+Avg Training Stats after 72 global rounds:
+Training Loss : -0.10367005767507685
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 73 |
+
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110612
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110176
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108524
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108757
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109738
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110100
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107395
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109256
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109925
+| Global Round : 72 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107343
+
+ | Global Training Round : 74 |
+
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108038
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110811
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112669
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109830
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108843
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109740
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109610
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108212
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109763
+| Global Round : 73 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110876
+ 
+Avg Training Stats after 74 global rounds:
+Training Loss : -0.10382791526011519
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 75 |
+
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110353
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109794
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111315
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109030
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108888
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107330
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109292
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110441
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110780
+| Global Round : 74 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109214
+
+ | Global Training Round : 76 |
+
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107514
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112406
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109156
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111591
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107590
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107701
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111080
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111561
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111065
+| Global Round : 75 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106735
+ 
+Avg Training Stats after 76 global rounds:
+Training Loss : -0.10398091147408674
+Train Accuracy: 20.00% 
+
+
+ | Global Training Round : 77 |
+
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109974
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111899
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109326
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107840
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107515
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107324
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109356
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109309
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109621
+| Global Round : 76 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109544
+
+ | Global Training Round : 78 |
+
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108724
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.105259
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108875
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110145
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109707
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111495
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111119
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110894
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110454
+| Global Round : 77 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111039
+ 
+Avg Training Stats after 78 global rounds:
+Training Loss : -0.10412168160845073
+Train Accuracy: 11.67% 
+
+
+ | Global Training Round : 79 |
+
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110483
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109591
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112093
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111481
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111388
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110073
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109902
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109690
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109452
+| Global Round : 78 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111267
+
+ | Global Training Round : 80 |
+
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108874
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110752
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110076
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110078
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110248
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109579
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111995
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112719
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111058
+| Global Round : 79 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111694
+ 
+Avg Training Stats after 80 global rounds:
+Training Loss : -0.10428425779566168
+Train Accuracy: 20.00% 
+
+
+ | Global Training Round : 81 |
+
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112637
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110605
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111519
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111341
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111133
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110276
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109163
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.106931
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111579
+| Global Round : 80 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111192
+
+ | Global Training Round : 82 |
+
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109920
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109244
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110850
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112195
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111268
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109933
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110799
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110603
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107867
+| Global Round : 81 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110866
+ 
+Avg Training Stats after 82 global rounds:
+Training Loss : -0.10443576248135508
+Train Accuracy: 18.33% 
+
+
+ | Global Training Round : 83 |
+
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110177
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109516
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109338
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111769
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110583
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112350
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113048
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110117
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110153
+| Global Round : 82 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.107515
+
+ | Global Training Round : 84 |
+
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112026
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112303
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112740
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113365
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109764
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111108
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112778
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108786
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112908
+| Global Round : 83 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112796
+ 
+Avg Training Stats after 84 global rounds:
+Training Loss : -0.10459579232902753
+Train Accuracy: 28.33% 
+
+
+ | Global Training Round : 85 |
+
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113360
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114340
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110677
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110361
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112710
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110743
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114425
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108383
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112237
+| Global Round : 84 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112532
+
+ | Global Training Round : 86 |
+
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114234
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109668
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114443
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110170
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112250
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113221
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111034
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113847
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110717
+| Global Round : 85 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109060
+ 
+Avg Training Stats after 86 global rounds:
+Training Loss : -0.10476613794128563
+Train Accuracy: 20.00% 
+
+
+ | Global Training Round : 87 |
+
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111108
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109903
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112415
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112771
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113653
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113378
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109753
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113214
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114098
+| Global Round : 86 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111694
+
+ | Global Training Round : 88 |
+
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111882
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110909
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110995
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111218
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113377
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110098
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111790
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111795
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109349
+| Global Round : 87 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114276
+ 
+Avg Training Stats after 88 global rounds:
+Training Loss : -0.10492790092460134
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 89 |
+
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111684
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112415
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.109222
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111548
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114595
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111500
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113426
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113215
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111957
+| Global Round : 88 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111612
+
+ | Global Training Round : 90 |
+
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111887
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111770
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112202
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116217
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115151
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111067
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114134
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110437
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112844
+| Global Round : 89 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111455
+ 
+Avg Training Stats after 90 global rounds:
+Training Loss : -0.10509432319965628
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 91 |
+
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112323
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116241
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111708
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111165
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110727
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.108019
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113275
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111120
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112213
+| Global Round : 90 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111704
+
+ | Global Training Round : 92 |
+
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114208
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115455
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114592
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110954
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111986
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111348
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112552
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111501
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113270
+| Global Round : 91 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113507
+ 
+Avg Training Stats after 92 global rounds:
+Training Loss : -0.10525300117290538
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 93 |
+
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116478
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114145
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113169
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112350
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114183
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114259
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112858
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112523
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112940
+| Global Round : 92 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111865
+
+ | Global Training Round : 94 |
+
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112761
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111743
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115661
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111497
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115095
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113700
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113029
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115203
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110874
+| Global Round : 93 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113528
+ 
+Avg Training Stats after 94 global rounds:
+Training Loss : -0.10542619382130337
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 95 |
+
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115539
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115849
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115592
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114105
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114377
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111736
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111668
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113329
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114022
+| Global Round : 94 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112593
+
+ | Global Training Round : 96 |
+
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112397
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114283
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112882
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112748
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112871
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116798
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111788
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113270
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116370
+| Global Round : 95 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115857
+ 
+Avg Training Stats after 96 global rounds:
+Training Loss : -0.10560280637970815
+Train Accuracy: 18.33% 
+
+
+ | Global Training Round : 97 |
+
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113309
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117908
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117847
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115292
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112931
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115490
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113955
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114874
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115063
+| Global Round : 96 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112563
+
+ | Global Training Round : 98 |
+
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116404
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116010
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114037
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114809
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113826
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115120
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112902
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112436
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116109
+| Global Round : 97 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116965
+ 
+Avg Training Stats after 98 global rounds:
+Training Loss : -0.10579239082883815
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 99 |
+
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117246
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113106
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116361
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114923
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114990
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112172
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115765
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113476
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113209
+| Global Round : 98 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115155
+
+ | Global Training Round : 100 |
+
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113429
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111180
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113817
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113558
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113568
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111046
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.111774
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112073
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114370
+| Global Round : 99 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116166
+ 
+Avg Training Stats after 100 global rounds:
+Training Loss : -0.10595392491668462
+Train Accuracy: 40.00% 
+
+
+ | Global Training Round : 101 |
+
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113667
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115190
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115559
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114326
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112710
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115886
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116141
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116123
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112976
+| Global Round : 100 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114259
+
+ | Global Training Round : 102 |
+
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114266
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113969
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113931
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112069
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115579
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112646
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115790
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115741
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112514
+| Global Round : 101 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116624
+ 
+Avg Training Stats after 102 global rounds:
+Training Loss : -0.10612146231327571
+Train Accuracy: 23.33% 
+
+
+ | Global Training Round : 103 |
+
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115488
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114708
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116271
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115326
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117136
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115334
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115782
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114451
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116169
+| Global Round : 102 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114530
+
+ | Global Training Round : 104 |
+
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117391
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116999
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113308
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116731
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116457
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117198
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115860
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114902
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117758
+| Global Round : 103 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113370
+ 
+Avg Training Stats after 104 global rounds:
+Training Loss : -0.10630678658445293
+Train Accuracy: 28.33% 
+
+
+ | Global Training Round : 105 |
+
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116743
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116280
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113322
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113663
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117333
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114804
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.110858
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114165
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116241
+| Global Round : 104 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116200
+
+ | Global Training Round : 106 |
+
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112948
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118532
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115777
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118054
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115466
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114631
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.112531
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116837
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114232
+| Global Round : 105 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115595
+ 
+Avg Training Stats after 106 global rounds:
+Training Loss : -0.10647478341212813
+Train Accuracy: 23.33% 
+
+
+ | Global Training Round : 107 |
+
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116406
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114365
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114992
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118545
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114560
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120309
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114442
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114703
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114724
+| Global Round : 106 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115323
+
+ | Global Training Round : 108 |
+
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115588
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117156
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114875
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115825
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116058
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118750
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116628
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118159
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114576
+| Global Round : 107 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118093
+ 
+Avg Training Stats after 108 global rounds:
+Training Loss : -0.10665495135579948
+Train Accuracy: 31.67% 
+
+
+ | Global Training Round : 109 |
+
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114622
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115194
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117489
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114088
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114388
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115495
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114860
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113857
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118883
+| Global Round : 108 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118563
+
+ | Global Training Round : 110 |
+
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114607
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117447
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115430
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115777
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116075
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116279
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116290
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118907
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117770
+| Global Round : 109 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116383
+ 
+Avg Training Stats after 110 global rounds:
+Training Loss : -0.10682704647156326
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 111 |
+
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114003
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116538
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116297
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116179
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119365
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116282
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115544
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119677
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116420
+| Global Round : 110 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113488
+
+ | Global Training Round : 112 |
+
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116927
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117117
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.113615
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116799
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114565
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116097
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117064
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118515
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118623
+| Global Round : 111 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116739
+ 
+Avg Training Stats after 112 global rounds:
+Training Loss : -0.10699964709180806
+Train Accuracy: 23.33% 
+
+
+ | Global Training Round : 113 |
+
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117934
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118922
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121529
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120152
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115984
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115898
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117207
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118787
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119120
+| Global Round : 112 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115916
+
+ | Global Training Round : 114 |
+
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118006
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115942
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116987
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123201
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120322
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114831
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118832
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115670
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115930
+| Global Round : 113 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120580
+ 
+Avg Training Stats after 114 global rounds:
+Training Loss : -0.10719417163677382
+Train Accuracy: 25.00% 
+
+
+ | Global Training Round : 115 |
+
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118255
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119347
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119306
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114284
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121570
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120319
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121281
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120414
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114885
+| Global Round : 114 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119780
+
+ | Global Training Round : 116 |
+
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119658
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116389
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123165
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120430
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120432
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118275
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121365
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117253
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117183
+| Global Round : 115 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121279
+ 
+Avg Training Stats after 116 global rounds:
+Training Loss : -0.107401920129256
+Train Accuracy: 21.67% 
+
+
+ | Global Training Round : 117 |
+
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115490
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120566
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118567
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116501
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117510
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116279
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118487
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117758
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116929
+| Global Round : 116 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118001
+
+ | Global Training Round : 118 |
+
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119309
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119517
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117628
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121921
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118928
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122391
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118956
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.114778
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115892
+| Global Round : 117 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116837
+ 
+Avg Training Stats after 118 global rounds:
+Training Loss : -0.10758345134051171
+Train Accuracy: 23.33% 
+
+
+ | Global Training Round : 119 |
+
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118955
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116701
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117077
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118526
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118782
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118309
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115833
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119942
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121017
+| Global Round : 118 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117994
+
+ | Global Training Round : 120 |
+
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118806
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118015
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119041
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118173
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120078
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116724
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119384
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122149
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119760
+| Global Round : 119 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116910
+ 
+Avg Training Stats after 120 global rounds:
+Training Loss : -0.10776720798884828
+Train Accuracy: 25.00% 
+
+
+ | Global Training Round : 121 |
+
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120506
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120225
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120676
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117625
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117756
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117540
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117673
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119101
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116707
+| Global Round : 120 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117805
+
+ | Global Training Round : 122 |
+
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118560
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120103
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118879
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117387
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119269
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120692
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120677
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124515
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118976
+| Global Round : 121 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118177
+ 
+Avg Training Stats after 122 global rounds:
+Training Loss : -0.10795368441670643
+Train Accuracy: 28.33% 
+
+
+ | Global Training Round : 123 |
+
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117395
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119433
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118598
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120424
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121113
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121970
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119061
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120654
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119842
+| Global Round : 122 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117863
+
+ | Global Training Round : 124 |
+
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120234
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116784
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119435
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116461
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120833
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117563
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122572
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121128
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118959
+| Global Round : 123 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120142
+ 
+Avg Training Stats after 124 global rounds:
+Training Loss : -0.10814028841954083
+Train Accuracy: 13.33% 
+
+
+ | Global Training Round : 125 |
+
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121957
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120811
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118794
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121005
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119396
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122010
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120427
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123899
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116263
+| Global Round : 124 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123746
+
+ | Global Training Round : 126 |
+
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120442
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119721
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120828
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117955
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121308
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116893
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119462
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120470
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.115505
+| Global Round : 125 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119424
+ 
+Avg Training Stats after 126 global rounds:
+Training Loss : -0.10832878875117452
+Train Accuracy: 15.00% 
+
+
+ | Global Training Round : 127 |
+
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121759
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120153
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119002
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117787
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122758
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121519
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119486
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118572
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119405
+| Global Round : 126 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118107
+
+ | Global Training Round : 128 |
+
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121005
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120984
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122369
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120218
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122600
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119028
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124069
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.116770
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122584
+| Global Round : 127 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118549
+ 
+Avg Training Stats after 128 global rounds:
+Training Loss : -0.10851640420150943
+Train Accuracy: 25.00% 
+
+
+ | Global Training Round : 129 |
+
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119144
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122791
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128690
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120902
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121791
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117411
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117530
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121186
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119537
+| Global Round : 128 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117592
+
+ | Global Training Round : 130 |
+
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120903
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124293
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123126
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121740
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119273
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121296
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122874
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122746
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125465
+| Global Round : 129 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122804
+ 
+Avg Training Stats after 130 global rounds:
+Training Loss : -0.1087169932287473
+Train Accuracy: 26.67% 
+
+
+ | Global Training Round : 131 |
+
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121301
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119819
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122000
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125663
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119441
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123005
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120230
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119859
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121132
+| Global Round : 130 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123151
+
+ | Global Training Round : 132 |
+
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121111
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120983
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124907
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125613
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120886
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123751
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122210
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118775
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118861
+| Global Round : 131 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119366
+ 
+Avg Training Stats after 132 global rounds:
+Training Loss : -0.10891223846737183
+Train Accuracy: 25.00% 
+
+
+ | Global Training Round : 133 |
+
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126546
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124868
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124443
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120566
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.119785
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124326
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121223
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122817
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121578
+| Global Round : 132 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122831
+
+ | Global Training Round : 134 |
+
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123168
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126471
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126878
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123811
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125129
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125424
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123162
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122125
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122068
+| Global Round : 133 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122228
+ 
+Avg Training Stats after 134 global rounds:
+Training Loss : -0.10912955341054432
+Train Accuracy: 23.33% 
+
+
+ | Global Training Round : 135 |
+
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124198
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122910
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123216
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121130
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121975
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124022
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121373
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124126
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126398
+| Global Round : 134 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125626
+
+ | Global Training Round : 136 |
+
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126193
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125042
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124823
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120579
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121506
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122675
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124035
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121411
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121362
+| Global Round : 135 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.117329
+ 
+Avg Training Stats after 136 global rounds:
+Training Loss : -0.10933347901000696
+Train Accuracy: 25.00% 
+
+
+ | Global Training Round : 137 |
+
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.130243
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127125
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125101
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120440
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125190
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125074
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123793
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122756
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127552
+| Global Round : 136 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125100
+
+ | Global Training Round : 138 |
+
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124517
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124702
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124495
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123444
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126656
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121722
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124991
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122481
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122282
+| Global Round : 137 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129506
+ 
+Avg Training Stats after 138 global rounds:
+Training Loss : -0.10955847830012225
+Train Accuracy: 18.33% 
+
+
+ | Global Training Round : 139 |
+
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122735
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121562
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122233
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121328
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120578
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125617
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122622
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123216
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120720
+| Global Round : 138 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123566
+
+ | Global Training Round : 140 |
+
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124992
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127130
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123854
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121130
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126642
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124438
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127160
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123063
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124489
+| Global Round : 139 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124184
+ 
+Avg Training Stats after 140 global rounds:
+Training Loss : -0.1097585429144757
+Train Accuracy: 26.67% 
+
+
+ | Global Training Round : 141 |
+
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125707
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127672
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124146
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126238
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126264
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.118140
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126476
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123957
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126432
+| Global Round : 140 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120824
+
+ | Global Training Round : 142 |
+
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123073
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127302
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126231
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123633
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.121306
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124887
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.120955
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124062
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126996
+| Global Round : 141 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127066
+ 
+Avg Training Stats after 142 global rounds:
+Training Loss : -0.10996713083709629
+Train Accuracy: 35.00% 
+
+
+ | Global Training Round : 143 |
+
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.131577
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123450
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124511
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127617
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126244
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124745
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128743
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128213
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.130003
+| Global Round : 142 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125816
+
+ | Global Training Round : 144 |
+
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126617
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127941
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125325
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123629
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128315
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127815
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123709
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126103
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127801
+| Global Round : 143 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127662
+ 
+Avg Training Stats after 144 global rounds:
+Training Loss : -0.11020080578616925
+Train Accuracy: 33.33% 
+
+
+ | Global Training Round : 145 |
+
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124285
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125008
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128135
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123066
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127041
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125068
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123028
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129757
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123072
+| Global Round : 144 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127646
+
+ | Global Training Round : 146 |
+
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126462
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.130801
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123036
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125182
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127981
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127691
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123331
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.130863
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125559
+| Global Round : 145 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128926
+ 
+Avg Training Stats after 146 global rounds:
+Training Loss : -0.11042130099073666
+Train Accuracy: 30.00% 
+
+
+ | Global Training Round : 147 |
+
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127536
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128015
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124283
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129224
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127201
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129041
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.122390
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126428
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129626
+| Global Round : 146 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128453
+
+ | Global Training Round : 148 |
+
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125843
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.130214
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126914
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128300
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128838
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126569
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.131085
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127967
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126345
+| Global Round : 147 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126021
+ 
+Avg Training Stats after 148 global rounds:
+Training Loss : -0.11065229222279142
+Train Accuracy: 26.67% 
+
+
+ | Global Training Round : 149 |
+
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129574
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129113
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125327
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.131081
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.123618
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125083
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126599
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127010
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129839
+| Global Round : 148 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.124300
+
+ | Global Training Round : 150 |
+
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.129557
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127835
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126034
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.127561
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126437
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128214
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128892
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.125801
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.126695
+| Global Round : 149 | Local Epoch : 0 | [0/480 (0%)]	Loss: -0.128597
+ 
+Avg Training Stats after 150 global rounds:
+Training Loss : -0.11087503981590272
+Train Accuracy: 25.00% 
+
+ 
+ Results after 150 global rounds of training:
+|---- Avg Train Accuracy: 25.00%
+|---- Test Accuracy: 28.57%
+
+ Total Run Time: 517.4074

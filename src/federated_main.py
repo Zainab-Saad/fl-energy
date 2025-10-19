@@ -9,6 +9,7 @@ import time
 import pickle
 import numpy as np
 from tqdm import tqdm
+import csv
 
 import torch
 from tensorboardX import SummaryWriter
@@ -29,9 +30,12 @@ if __name__ == '__main__':
     args = args_parser()
     exp_details(args)
 
-    if args.gpu:
+    if torch.cuda.is_available() and args.gpu is not None and args.gpu >= 0:
         torch.cuda.set_device(args.gpu)
-    device = 'cuda' if args.gpu else 'cpu'
+        device = torch.device(f'cuda:{args.gpu}')
+    else:
+        device = torch.device('cpu')
+    print("device:", device)
 
     # load dataset and user groups
     train_dataset, test_dataset, user_groups = get_dataset(args)
@@ -118,11 +122,24 @@ if __name__ == '__main__':
             print('Train Accuracy: {:.2f}% \n'.format(100*train_accuracy[-1]))
 
     # Test inference after completion of training
-    test_acc, test_loss = test_inference(args, global_model, test_dataset)
+    # test_acc, test_loss = test_inference(args, global_model, test_dataset)
+    test_acc_round, test_loss_round = test_inference(args, global_model, test_dataset)
+
+    csv_name = ('logs/round_metrics_{}_{}_{}_C[{}]_iid[{}]_E[{}]_B[{}].csv'
+           .format(args.dataset, args.model, args.epochs, args.frac,
+                   args.iid, args.local_ep, args.local_bs))
+    new_file = not os.path.exists(csv_name)
+    with open(csv_name, 'a', newline='') as f:
+        w = csv.writer(f)
+        if new_file:
+            w.writerow(['round','train_loss','avg_train_acc','test_acc','test_loss'])
+        w.writerow([epoch+1, float(train_loss[-1]),
+                    float(train_accuracy[-1]), float(test_acc_round), float(test_loss_round)])
+
 
     print(f' \n Results after {args.epochs} global rounds of training:')
     print("|---- Avg Train Accuracy: {:.2f}%".format(100*train_accuracy[-1]))
-    print("|---- Test Accuracy: {:.2f}%".format(100*test_acc))
+    print("|---- Test Accuracy: {:.2f}%".format(100*test_acc_round))
 
     # Saving the objects train_loss and train_accuracy:
     file_name = 'save/objects/{}_{}_{}_C[{}]_iid[{}]_E[{}]_B[{}].pkl'.\
